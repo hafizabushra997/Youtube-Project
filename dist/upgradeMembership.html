@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upgrade Membership</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="flex flex-col items-start p-20 gap-5">
+        <div class="mastercardsDiv flex flex-col gap-5">
+          <h1 class="title-font sm:text-4xl text-3xl font-medium">
+            Add New Payment
+          </h1>
+          <div class="cardImagesDiv flex gap-2">
+            <img
+              src="../images/upgradeMembership/Visa.png"
+              class="w-1/3"
+              alt=""
+            />
+            <img
+              src="../images/upgradeMembership/Mastercard.png"
+              class="w-1/3"
+              alt=""
+            />
+            <img
+              src="../images/upgradeMembership/paypal.png"
+              class="w-1/3"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="formDiv flex flex-col w-full gap-5">
+          <div class="flex flex-col sm:flex-row sm:w-full sm:justify-between">
+            <div class="p-2 w-full sm:w-1/3 flex flex-col gap-2">
+              <label for="cardNo" class="leading-relaxed text-xl"
+                >Card Number</label
+              >
+              <input
+                type="text"
+                id="cardNo"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border-2 border-gray-400 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                placeholder="Card Type Will Be Detected"
+              />
+            </div>
+            <div
+              class="w-full flex flex-col sm:w-1/2 sm:flex-row sm:flex-grow lg:flex-shrink"
+            >
+              <div class="p-2 w-full sm:w-1/2 flex flex-col gap-2">
+                <label for="securityCode" class="leading-relaxed text-xl"
+                  >Security Code</label
+                >
+                <input
+                  type="number"
+                  id="securityCode"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border-2 border-gray-400 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+
+              <div class="p-2 w-full sm:w-1/2 flex flex-col gap-2">
+                <label for="expiryDate" class="leading-relaxed text-xl"
+                  >Expiration Date</label
+                >
+                <div class="flex gap-2">
+                  <select
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border-2 border-gray-400 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  >
+                    <option>Month</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <input
+                    type="number"
+                    id="expiryYear"
+                    class="w-1/2 bg-gray-100 bg-opacity-50 rounded border-2 border-gray-400 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    placeholder="2013"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 w-full sm:w-1/3 flex flex-col gap-2">
+            <label for="name" class="leading-relaxed text-xl"
+              >Name on Card</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full bg-gray-100 bg-opacity-50 rounded border-2 border-gray-400 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              placeholder="John Adam"
+            />
+          </div>
+        </div>
+
+        <div class="buttonDiv self-end">
+          <button
+            class="w-40 bg-sky-500 text-white py-3 px-6 focus:outline-none hover:bg-sky-600 rounded-lg text-lg mt-4"
+          >
+            Upgrade Now
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
