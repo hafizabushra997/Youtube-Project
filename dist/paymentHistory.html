@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment History</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex mb-8 lg:w-2/3 w-full mx-auto justify-between">
+          <div class="flex items-center shadow-sm rounded-md relative">
+            <img
+              src="../images/_Magnifyingglass.png"
+              alt=""
+              class="absolute top-2 right-2"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              class="focus:outline-none w-60 md:w-80 p-2 bg-gray-100 text-lg"
+            />
+          </div>
+
+          <button
+            class="flex text-lg text-white bg-sky-500 py-2 px-6 focus:outline-none hover:bg-sky-600 rounded"
+          >
+            Clear
+          </button>
+        </div>
+        <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+          <table class="table-auto w-full text-center whitespace-nowrap">
+            <thead class="bg-gray-100 rounded-lg">
+              <tr>
+                <th
+                  class="w-10 title-font tracking-wider font-medium text-gray-900 text-lg"
+                ></th>
+                <th
+                  class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-lg"
+                >
+                  Date
+                </th>
+                <th
+                  class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-lg"
+                >
+                  Membership
+                </th>
+                <th
+                  class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-lg"
+                >
+                  Amount
+                </th>
+                <th
+                  class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-lg"
+                >
+                  Status
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b-2 border-gray-200">
+                <td class="w-10 text-center">
+                  <input name="paymentRecord" type="checkbox" />
+                </td>
+                <td class="px-4 py-3">12.08.2023</td>
+                <td class="px-4 py-3">Free</td>
+                <td class="px-4 py-3">$500</td>
+                <td class="px-4 py-3">Paid</td>
+              </tr>
+              <tr class="border-b-2 border-gray-200">
+                <td class="w-10 text-center">
+                  <input name="paymentRecord" type="checkbox" />
+                </td>
+                <td class="px-4 py-3">12.08.2023</td>
+                <td class="px-4 py-3">advanced</td>
+                <td class="px-4 py-3">$500</td>
+                <td class="px-4 py-3">Paid</td>
+              </tr>
+              <tr class="border-b-2 border-gray-200">
+                <td class="w-10 text-center">
+                  <input name="paymentRecord" type="checkbox" />
+                </td>
+                <td class="px-4 py-3">12.08.2023</td>
+                <td class="px-4 py-3">Lorem ipsum dolor</td>
+                <td class="px-4 py-3">$500</td>
+                <td class="px-4 py-3">Paid</td>
+              </tr>
+              <tr class="border-b-2 border-gray-200">
+                <td class="w-10 text-center">
+                  <input name="paymentRecord" type="checkbox" />
+                </td>
+                <td class="px-4 py-3">12.08.2023</td>
+                <td class="px-4 py-3">advanced</td>
+                <td class="px-4 py-3">$500</td>
+                <td class="px-4 py-3">Paid</td>
+              </tr>
+              <tr class="border-b-2 border-gray-200">
+                <td class="w-10 text-center">
+                  <input name="paymentRecord" type="checkbox" />
+                </td>
+                <td class="px-4 py-3">12.08.2023</td>
+                <td class="px-4 py-3">advanced</td>
+                <td class="px-4 py-3">$500</td>
+                <td class="px-4 py-3">Paid</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
